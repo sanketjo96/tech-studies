@@ -60,7 +60,7 @@
    2. Startegies
        - Cluster - grouped with Low latency h/w, within single AZ
        - Spread - Spread across different H/w, spread across different AZ (critical apps)
-       - Partitions - Similar to spread but spread across partitions - racks. They are still separated rack wise, so low latencies.
+       - Partitions - Similar to spread but spread across partitions - racks. They are still separated rack wise within same AZs, so low latencies.
 
 ---
 
