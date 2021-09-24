@@ -27,6 +27,29 @@
       - Cache for in mem databases like redis
       - Distributed file system
       - Example I, D or H1 family
+
+#### Launch Types
+1. On demand
+2. Reserved (From 1 to 3 yrs)
+    - Standard
+    - Scheduled
+    - Covertible (can change EC2 types)
+3. Spot instances  (less cost)
+    - Batch processing
+    - Image processing
+    - One time JOBS 
+    - JOBS with flexible start and end time
+4. Dedicated host
+    - Full dedicated machine
+    - Can give you full complice
+    - Dedicated H/W with full acess
+    - Control over softwares
+    - Higher cost
+5. Dedicated instance
+    - Dedicated machine
+    - But no acess to h/w
+    - Useful in cases where high level complices needs are in place i.e. not sharing h/w with any other aws account
+
 ---
 
 #### Security Groups
