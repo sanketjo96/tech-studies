@@ -84,3 +84,12 @@
     - HTTP - 80
     - HTTPS - 443
     - RDP - 3389
+
+---
+
+#### EC2 storage
+1. EBS volume
+   - Kind of USB stick which we can attach to ec2
+   - These are network drives
+   - we can detach and attach to instances but they are locked to AZs
+   - Taking der snapshot and migrating to other AZs or regions is possible
