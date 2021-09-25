@@ -61,6 +61,17 @@
        - Cluster - grouped with Low latency h/w, within single AZ
        - Spread - Spread across different H/w, spread across different AZ (critical apps)
        - Partitions - Similar to spread but spread across partitions - racks. They are still separated rack wise within same AZs, so low latencies.
+5. ENI
+
+6. Hibernate state
+
+7. Advance topics
+   1. EC2 Nitro - next gen aws technology for virtualization. Better networking and very high IOPS EBS volumes
+   2. VCPUs 
+         - AWS provided physical CPUs to machines called as core but it also runs multiple thread on each of them and try to add compute power. 
+         - Example - ec2 has 2 cores running 2 main thread each so vcpus are 4
+         - It is very important to tweak number of main thread (vcpus) per core according to app so that one can save cost
+         - Better the judgement on exact core # and vcpu# better the cost saving  
 
 ---
 
