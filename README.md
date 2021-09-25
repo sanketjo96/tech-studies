@@ -1,6 +1,6 @@
 # AWS
 
-#### EC2 Basics
+#### EC2
 
 1. EC2 Types
    1. General purpose
@@ -71,7 +71,8 @@
          - AWS provided physical CPUs to machines called as core but it also runs multiple thread on each of them and try to add compute power. 
          - Example - ec2 has 2 cores running 2 main thread each so vcpus are 4
          - It is very important to tweak number of main thread (vcpus) per core according to app so that one can save cost
-         - Better the judgement on exact core # and vcpu# better the cost saving  
+         - Better the judgement on exact core # and vcpu# better the cost saving
+   3. Capacity reservation - one can specify the required capacity of ec2 in terms of required nums,total ram, space etc. So that it will be available when needed
 
 ---
 
