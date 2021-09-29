@@ -93,3 +93,16 @@
    - These are network drives
    - we can detach and attach to instances but they are locked to AZs
    - Taking der snapshot and migrating to other AZs or regions is possible
+
+2. EC2 instance store
+    - EBS volume has limited perf as in the end they are network drive
+    - if you need high IOPs ec2 instance store is an option which are disk drives mounted on physical server
+    - Data will get lost on stop. So backing it up is the users responsibility
+    - ideal if you need high IOPs for use case like temp storage, cache
+
+2. AMI 
+   - customization of ec2 instance while launching
+   - we can pre-package our ec2 instance
+   - can create our own or pick from market place to save some time
+   
+3. 
