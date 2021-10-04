@@ -105,4 +105,3 @@
    - we can pre-package our ec2 instance
    - can create our own or pick from market place to save some time
    
-3. 
