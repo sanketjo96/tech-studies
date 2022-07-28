@@ -88,7 +88,7 @@
 ---
 
 #### EC2 storage
-1. EBS volume
+1. EBS
    - Kind of USB stick which we can attach to ec2
    - These are network drives
    - we can detach and attach to instances but they are locked to AZs
@@ -100,8 +100,27 @@
     - Data will get lost on stop. So backing it up is the users responsibility
     - ideal if you need high IOPs for use case like temp storage, cache
 
-2. AMI 
+#### Volume types
+1. Cold HDD
+   - When low cost is needed
+   - Data is rarely accessed
+
+2. Trhoughput optimized HDD
+   - Where we need to process huge data
+   - Big data, data wearehousing
+
+3. Provisioned IOPS SSD
+   - Very high IOPS
+   - High performance 
+   - High cost
+
+4. General purpose SSD
+   - Balance IOPS/Perf and cost effective
+
+---
+
+#### AMI 
    - customization of ec2 instance while launching
    - we can pre-package our ec2 instance
    - can create our own or pick from market place to save some time
-   
+
