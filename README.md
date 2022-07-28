@@ -6,27 +6,27 @@
    1. General purpose
        - Balance between compute, networking and memory
        - Ideal for code repo or web servers
-       - Example T family
+       - **Example T family**
    2. Compute optimize
        - Used for compute intensive workloads like
          - Media transcoding
          - High perf web servers
          - Scientific data modeling 
          - Gaming 
-         - Example C family
+         - **Example C family**
    3. Memory optimized
        - Useful for processing large data in memory
          - High perf relational/non relational DBs
          - In mem DBs for BI
          - Real time processing apps
-         - Example R family
+         - **Example R family**
    4. Storage optimized
        - Use cases where there are high sequential read and writes to local storage
          - High frequency online transactions
          - Relational and NOSQL DBs
          - Cache for in mem databases like redis
          - Distributed file system
-         - Example I, D or H1 family
+         - **Example I, D or H1 family**
 
 2. EC 2 Launch Types
    1. On demand
