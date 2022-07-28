@@ -91,7 +91,7 @@
 1. EBS
    - Kind of USB stick which we can attach to ec2
    - These are network drives
-   - we can detach and attach to instances but they are locked to AZs
+   - we can detach and attach to instances but they **are locked to AZs**
    - Taking der snapshot and migrating to other AZs or regions is possible
 
 2. EC2 instance store
@@ -105,7 +105,7 @@
    - When low cost is needed
    - Data is rarely accessed
 
-2. Trhoughput optimized HDD
+2. Throughput optimized HDD
    - Where we need to process huge data
    - Big data, data wearehousing
 
