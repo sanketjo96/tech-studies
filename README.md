@@ -88,36 +88,35 @@
 ---
 
 #### EC2 storage
-1. EBS
-   - Kind of USB stick which we can attach to ec2
-   - These are network drives
-   - we can detach and attach to instances but they **are locked to AZs**
-   - Taking der snapshot and migrating to other AZs or regions is possible
 
-2. EC2 instance store (**ephemeral storage**)
+1. EC2 instance store (**ephemeral storage**)
     - EBS volume has limited perf as in the end they are network drive
     - if you need high IOPs ec2 instance store is an option which are disk drives mounted on physical server
     - Data will get lost on stop. So backing it up is the users responsibility
     - ideal if you need high IOPs for use case like temp storage, cache
     - This used to be default storage when one create ec2, but now its not and EBS took that position
+2. EBS
+   - Kind of USB stick which we can attach to ec2
+   - These are network drives/volumes
+   - we can detach and attach to instances but they **are locked to AZs**
+   - Taking der snapshot and migrating to other AZs or regions is possible
+   - EBS volume types
+      - Cold HDD
+         - When low cost is needed
+         - Data is rarely accessed
 
-#### Volume types
-1. Cold HDD
-   - When low cost is needed
-   - Data is rarely accessed
+      - Throughput optimized HDD
+         - Where we need to process huge data
+         - Big data, data wearehousing
 
-2. Throughput optimized HDD
-   - Where we need to process huge data
-   - Big data, data wearehousing
+      - Provisioned IOPS SSD
+         - Very high IOPS
+         - High performance 
+         - High cost
 
-3. Provisioned IOPS SSD
-   - Very high IOPS
-   - High performance 
-   - High cost
-
-4. General purpose SSD
-   - Balance IOPS/Perf and cost effective
-
+      - General purpose SSD
+         - Balance IOPS/Perf and cost effective
+  
 ---
 
 #### AMI 
