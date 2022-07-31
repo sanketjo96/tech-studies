@@ -99,6 +99,7 @@
     - if you need high IOPs ec2 instance store is an option which are disk drives mounted on physical server
     - Data will get lost on stop. So backing it up is the users responsibility
     - ideal if you need high IOPs for use case like temp storage, cache
+    - This used to be default storage when one create ec2, but now its not and EBS took that position
 
 #### Volume types
 1. Cold HDD
