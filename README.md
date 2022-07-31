@@ -95,12 +95,15 @@
     - Data will get lost on stop. So backing it up is the users responsibility
     - ideal if you need high IOPs for use case like temp storage, cache
     - This used to be default storage when one create ec2, but now its not and EBS took that position
+    - Problems
+       - Non persistant
+       - Not reliable
 2. EBS
    - Kind of USB stick which we can attach to ec2
    - These are network drives/volumes
    - we can detach and attach to instances but they **are locked to AZs**
    - Taking der snapshot and migrating to other AZs or regions is possible
-   - EBS volume types
+   - ***EBS volume types***
       - Cold HDD
          - When low cost is needed
          - Data is rarely accessed
@@ -116,6 +119,9 @@
 
       - General purpose SSD
          - Balance IOPS/Perf and cost effective
+   - Problems with EC2
+      - You cant have shared EBS for multiple EC2
+      - You cant have EBS in one AZ and EC2 at other AZ 
   
 ---
 
