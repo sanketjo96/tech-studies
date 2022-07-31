@@ -94,7 +94,7 @@
    - we can detach and attach to instances but they **are locked to AZs**
    - Taking der snapshot and migrating to other AZs or regions is possible
 
-2. EC2 instance store
+2. EC2 instance store (**ephemeral storage**)
     - EBS volume has limited perf as in the end they are network drive
     - if you need high IOPs ec2 instance store is an option which are disk drives mounted on physical server
     - Data will get lost on stop. So backing it up is the users responsibility
