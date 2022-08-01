@@ -86,7 +86,15 @@
    - **Solution**
       - EBS muti attach feature
       - Limitation 
-         - Your instance needs to be [nitro](https://github.com/sanketjo96/tech-studies-aws/blob/main/README.md) (nitro is advanced hardware)
+         - Your instance needs to be [nitro](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#ec2-nitro-instances) (nitro is advanced hardware)
          - Your volume type needs to be **Provisioned IOPS SSD** which is expensive
-      - EFS - Prefered!!!
+      - EFS - ELASTIC FILE SYSTEM Prefered!!!
+         - Its a common network drive
+         - Its a diffrent service (unlike EBS)
+         - Smart options
+            - Can select storage classes like standard (replicate data across zone), One-Zone (no replication)
+            - You can opt in feature like IA where you can save mony by marking file system Infrequent access (IA)
+
+#### Insights
+- [OPS and Throughpus](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#ec2-nitro-instances)
 
