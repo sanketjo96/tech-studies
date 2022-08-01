@@ -91,6 +91,7 @@
       - EFS - ELASTIC FILE SYSTEM Prefered!!!
          - Its a common network drive
          - Its a diffrent service (unlike EBS)
+         - It makes file system available to multiple ec2 instances with using [mount targets](https://miro.com/app/board/uXjVOibrNh4=/?moveToViewport=-436,-397,1874,818&embedId=446201865057)
          - Smart options
             - Can select storage classes like standard (replicate data across zone), One-Zone (no replication)
             - You can opt in feature like IA where you can save mony by marking file system Infrequent access (IA)
