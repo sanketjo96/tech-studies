@@ -96,5 +96,5 @@
             - You can opt in feature like IA where you can save mony by marking file system Infrequent access (IA)
 
 #### Insights
-- [OPS and Throughpus](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#ec2-nitro-instances)
+- [OPS and Throughpus](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
 
