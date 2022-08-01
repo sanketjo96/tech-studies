@@ -86,7 +86,7 @@
    - **Solution**
       - EBS muti attach feature
       - Limitation 
-         - Your instance needs to be [nitro][https://github.com/sanketjo96/tech-studies-aws/blob/main/README.md] (nitro is advanced hardware)
+         - Your instance needs to be [nitro](https://github.com/sanketjo96/tech-studies-aws/blob/main/README.md) (nitro is advanced hardware)
          - Your volume type needs to be **Provisioned IOPS SSD** which is expensive
       - EFS - Prefered!!!
 
