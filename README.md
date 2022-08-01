@@ -1,7 +1,6 @@
 # AWS
 
 #### EC2
-
 1. EC2 Types
    1. General purpose
        - Balance between compute, networking and memory
@@ -50,45 +49,7 @@
        - But no access to h/w
        - Useful in cases where high level compliance needs are in place i.e. not sharing h/w with any other aws account
 
-3. IPs
-   1. Private
-   2. Public
-   3. Elastic (charchable and used mostly for redirecting traffic to required instance on failure)
-
-4. Placement groups
-   1. Controls placements for EC2
-   2. Startegies
-       - Cluster - grouped with Low latency h/w, within single AZ
-       - Spread - Spread across different H/w, spread across different AZ (critical apps)
-       - Partitions - Similar to spread but spread across partitions - racks. They are still separated rack wise within same AZs, so low latencies.
-5. ENI
-
-6. Hibernate state
-
-7. Advance topics
-   1. EC2 Nitro - next gen aws technology for virtualization. Better networking and very high IOPS EBS volumes
-   2. VCPUs 
-         - AWS provided physical CPUs to machines called as core but it also runs multiple thread on each of them and try to add compute power. 
-         - Example - ec2 has 2 cores running 2 main thread each so vcpus are 4
-         - It is very important to tweak number of main thread (vcpus) per core according to app so that one can save cost
-         - Better the judgement on exact core # and vcpu# better the cost saving
-   3. Capacity reservation - one can specify the required capacity of ec2 in terms of required nums,total ram, space etc. So that it will be available when needed
-
----
-
-#### Security Groups
-1. Classic Ports
-    - SHH - 22
-    - FTP - 21
-    - SFTP - 22
-    - HTTP - 80
-    - HTTPS - 443
-    - RDP - 3389
-
----
-
 #### EC2 storage
-
 1. EC2 instance store (**ephemeral storage**)
     - EBS volume has limited perf as in the end they are network drive
     - if you need high IOPs ec2 instance store is an option which are disk drives mounted on physical server
@@ -121,12 +82,5 @@
          - Balance IOPS/Perf and cost effective
    - Problems with EC2
       - You cant have shared EBS for multiple EC2
-      - You cant have EBS in one AZ and EC2 at other AZ 
-  
----
-
-#### AMI 
-   - customization of ec2 instance while launching
-   - we can pre-package our ec2 instance
-   - can create our own or pick from market place to save some time
+      - You cant have EBS in one AZ and EC2 at other AZ
 
