@@ -83,4 +83,10 @@
    - Problems with EC2
       - You cant have shared EBS for multiple EC2
       - You cant have EBS in one AZ and EC2 at other AZ
+   - **Solution**
+      - EBS muti attach feature
+      - Limitation 
+         - Your instance needs to be nitro (nitro is advanced hardware)
+         - Your volume type needs to be **Provisioned IOPS SSD** which is expensive
+      - EFS - Prefered!!!
 
