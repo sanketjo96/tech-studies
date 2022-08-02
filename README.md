@@ -1,5 +1,4 @@
-# AWS
----
+# AWS SA certification notes
 
 #### EC2
 1. Types
