@@ -95,7 +95,20 @@
          - Smart options
             - Can select storage classes like standard (replicate data across zone), One-Zone (no replication)
             - You can opt in feature like IA where you can save mony by marking file system Infrequent access (IA)
+         - Limitation
+            - This is good across AZs but not across regions
+         - Practical gotchas
+            - Install nfs-utils on instances as EFS is NFS based system
+            - Create common folder on ec2
+            - Mount comon folder to EFS by running mount command
+            
+#### Load balancer
+   - Classic load balancer
+   - Application load balancer
+   - Network load balancer
+
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
+- [How to write user script for EC2 ?](https://www.javacodegeeks.com/2020/05/how-to-install-apache-web-server-on-ec2-instance-using-user-data-script.html)
 
