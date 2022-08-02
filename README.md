@@ -105,8 +105,10 @@
 #### Load balancer
    - Classic load balancer
    - Application load balancer
-      - Creates LB node at respective AZs and then its responsiblity of nodes to distribute load
-      - ![image](https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png)
+      - What if you need to balance traffic across Az A and AZ B, but A have 4 ec2 and b have just 1, AZ b will be overloaded if both AZs get 50% traffic
+      - To address this -  LB nodes get created at respective AZs and then its LB node's responsiblity to distribute load further
+      - Cross zone load balancing looks like below
+         - ![image](https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png)
    - Network load balancer
 
 
