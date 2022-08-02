@@ -105,6 +105,8 @@
 #### Load balancer
    - Classic load balancer
    - Application load balancer
+      - Creates LB node at respective AZs and then its responsiblity of nodes to distribute load
+      - ![image](https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png)
    - Network load balancer
 
 
