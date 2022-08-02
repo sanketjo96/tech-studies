@@ -104,16 +104,25 @@
             
 #### Load balancer
    - Classic load balancer
+      - Supports all protocols HTTP,HTTPS,TCP,UDP
+      - Expensive and less performant
+      - EC2 attached directly to load balancer
    - Application load balancer
-      - **Cross zone load balancing** 
-         - What if you need to balance traffic across Az A and AZ B, but A have 4 ec2 and b have just 1, AZ b will be overloaded if both AZs get 50% traffic
-         - To address this -  LB nodes get created at respective AZs and then its LB node's responsiblity to distribute load further
-         - Cross zone load balancing looks like below
-            - ![image](https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png)
+      - Layer 7 protocols - HTTP, HTTPS etc
+      - Cost optimized and fast
+      - Ec2 needs to be added first in target group and then TG connects to load balencer
+      - **Target group**
+         - This is diffrence from classic load balencer
+         - Its just a logical grouping of servers for creating ideal load balancing 
    - Network load balancer
-
+      - Layer 4 protocol - TCP, UDP,TLS
+      - Its similar to ALB, the differance lies in performance, its way faster and used when you need to support millions req/sec
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
 - [How to write user script for EC2 ?](https://www.javacodegeeks.com/2020/05/how-to-install-apache-web-server-on-ec2-instance-using-user-data-script.html)
+- What is Cross zone load balancing
+         - What if you need to balance traffic across Az A and AZ B, but A have 4 ec2 and b have just 1, AZ b will be overloaded if both AZs get 50% traffic
+         - To address this -  LB nodes get created at respective AZs and then its LB node's responsiblity to distribute load further
+         ![image](https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png)
 
