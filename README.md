@@ -1,7 +1,7 @@
 # AWS
 
 #### EC2
-1. EC2 Types
+1. Types
    1. General purpose
        - Balance between compute, networking and memory
        - Ideal for code repo or web servers
@@ -27,7 +27,7 @@
          - Distributed file system
          - **Example I, D or H1 family**
 
-2. EC 2 Launch Types
+2. Launch Configs
    1. On demand
    2. Reserved (From 1 to 3 yrs)
        - Standard
