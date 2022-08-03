@@ -118,7 +118,7 @@
 
    - ASG - (auto scaling group)
       - What if instances went down or terminated due to error or reached to mem thorshold
-      - Its an entity to add/remove instace without manual intervention
+      - Its an entity to add/remove instace without manual intervention (a cheaf whop creates dishes)
       - It provides high availablity
       - You need to provide recipe to take care of auto scaling - ec2 launch template is that recipe for **a cheaf ASG**
       - Now its responsiblity of cheaf to maintain good cooking quality i.e maintain numbetr of instances (min,max desired)
@@ -130,7 +130,10 @@
                - Limit: Not very flexible
             - Step scaling
                - Increase or descrease desired capacity based on set of adjustments
-               - **Example - If 50 < CPU < 60% - add1, If 70% < CPU < 60% - add2, If 80% < CPU < 90% - add3**
+               - **Example - If 50% < CPU < 60% - add1, If 70% < CPU < 60% - add2, If 80% < CPU < 90% - add3**
+      - In short diag
+      ![image](https://user-images.githubusercontent.com/31438283/182691970-82cac0f9-4a54-4877-9b24-c1df92e1c5f3.png)
+
       
 
 #### Insights
