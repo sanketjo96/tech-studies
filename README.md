@@ -121,6 +121,17 @@
       - Its an entity to add/remove instace without manual intervention
       - It provides high availablity
       - You need to provide recipe to take care of auto scaling - ec2 launch template is that recipe for **a cheaf ASG**
+      - Now its responsiblity of cheaf to maintain good cooking quality i.e maintain numbetr of instances (min,max desired)
+      - Scaling policy
+         - Manual Scaling
+         - Dynamic scaling
+            - Simple scaling 
+               - **Example - If CPU > 70% add 1 instance, if CPU < 20% remove 1 instance**
+               - Limit: Not very flexible
+            - Step scaling
+               - Increase or descrease desired capacity based on set of adjustments
+               - **Example - If 50 < CPU < 60% - add1, If 70% < CPU < 60% - add2, If 80% < CPU < 90% - add3**
+      
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
