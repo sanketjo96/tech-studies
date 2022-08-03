@@ -68,16 +68,13 @@
       - Cold HDD
          - When low cost is needed
          - Data is rarely accessed
-
       - Throughput optimized HDD
          - Where we need to process huge data
          - Big data, data wearehousing
-
       - Provisioned IOPS SSD
          - Very high IOPS
          - High performance 
-         - High cost
-
+         - High cost 
       - General purpose SSD
          - Balance IOPS/Perf and cost effective
    - Problems with EC2
@@ -111,12 +108,19 @@
       - Layer 7 protocols - HTTP, HTTPS etc
       - Cost optimized and fast
       - Ec2 needs to be added first in target group and then TG connects to load balencer
-      - **Target group**
+      - **Target group and listners**
          - This is diffrence from classic load balencer
-         - Its just a logical grouping of servers for creating ideal load balancing 
+         - Its just a logical grouping of servers for creating ideal load balancing
+         - One need to add Listner on ALB through which user requests forwarded to target groups (based on paths, ports, user IPs etc.)
    - Network load balancer
       - Layer 4 protocol - TCP, UDP,TLS
       - Its similar to ALB, the differance lies in performance, its way faster and used when you need to support millions req/sec
+
+   - ASG - (auto scaling group)
+      - What if instances went down or terminated due to error or reached to mem thorshold
+      - Its an entity to add/remove instace without manual intervention
+      - It provides high availablity
+      - You need to provide recipe to take care of auto scaling - ec2 launch template is that recipe for **a cheaf ASG**
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
@@ -125,4 +129,5 @@
          - What if you need to balance traffic across Az A and AZ B, but A have 4 ec2 and b have just 1, AZ b will be overloaded if both AZs get 50% traffic
          - To address this -  LB nodes get created at respective AZs and then its LB node's responsiblity to distribute load further
          ![image](https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png)
+- TBD - Lanch template vs Launch configuration
 
