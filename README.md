@@ -125,7 +125,7 @@
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
 - [How to write user script for EC2 ?](https://www.javacodegeeks.com/2020/05/how-to-install-apache-web-server-on-ec2-instance-using-user-data-script.html)
-- What is Cross zone load balancing
+- [What is Cross zone load balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html)
          - What if you need to balance traffic across Az A and AZ B, but A have 4 ec2 and b have just 1, AZ b will be overloaded if both AZs get 50% traffic
          - To address this -  LB nodes get created at respective AZs and then its LB node's responsiblity to distribute load further
          ![image](https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png)
