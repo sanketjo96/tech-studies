@@ -131,8 +131,7 @@
             - Step scaling
                - Increase or descrease desired capacity based on set of adjustments
                - **Example - If 50% < CPU < 60% - add1, If 70% < CPU < 60% - add2, If 80% < CPU < 90% - add3**
-      - In short diag
-      <img src="https://user-images.githubusercontent.com/31438283/182691970-82cac0f9-4a54-4877-9b24-c1df92e1c5f3.png" width="200">
+      <img src="https://user-images.githubusercontent.com/31438283/182691970-82cac0f9-4a54-4877-9b24-c1df92e1c5f3.png" width="300" height="200">
 
       
 
