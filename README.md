@@ -143,10 +143,14 @@
    - **Routing table** - Servers within public subnets will never directly connect to internet gateway they need to refer routing tables
    - **NAT Gateway** - Private servers will never get internate directly, rather they will request NAT gateway resides in Public subnet to get internet
    <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/182776631-1cd10eae-a466-4c6e-8bff-ad4790d815a9.png">
+- Details
+   - By default we will get default VPC in all regions
+   - 
 
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
+- [What is CIDR Block?](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/learn/lecture/13528536#overview)
 - [How to write user script for EC2 ?](https://www.javacodegeeks.com/2020/05/how-to-install-apache-web-server-on-ec2-instance-using-user-data-script.html)
 - [What is Cross zone load balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html)
          - What if you need to balance traffic across Az A and AZ B, but A have 4 ec2 and b have just 1, AZ b will be overloaded if both AZs get 50% traffic
