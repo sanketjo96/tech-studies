@@ -133,7 +133,17 @@
                - **Example - If 50% < CPU < 60% - add1, If 70% < CPU < 60% - add2, If 80% < CPU < 90% - add3**
       <img src="https://user-images.githubusercontent.com/31438283/182691970-82cac0f9-4a54-4877-9b24-c1df92e1c5f3.png" width="300" height="200">
 
-      
+#### Virtual private cloud
+- Components of VPC
+   - **VPC** - is a regional entity, which is ones own private network  
+   - **Subnet** - Within VPC we have sub groups called subnets and its AZ level
+   - **Public and Private subnet** - Public subnets holds front facing components (UI server) and private subnets are to have your private components (DBs etc.) 
+   - **Implicit router** - This drives comunication across subnets
+   - **Internet gateway** - A main access point through which public internet enters to your VPC
+   - **Routing table** - Servers within public subnets will never directly connect to internet gateway they need to refer routing tables
+   - **NAT Gateway** - Private servers will never get internate directly, rather they will request NAT gateway resides in Public subnet to get internet
+   <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/182776631-1cd10eae-a466-4c6e-8bff-ad4790d815a9.png">
+
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
