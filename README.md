@@ -145,8 +145,17 @@
    <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/182776631-1cd10eae-a466-4c6e-8bff-ad4790d815a9.png">
 - Details
    - By default we will get default VPC in all regions
-   - 
+   - Creating VPC
+      - CIDR needs to provide
+      - Tenancy - option to select where to run VPC servers on - dedicated h/w or not (dedicated = high perf and cost)
 
+### Security Group
+   - **Security Group** 
+      - Instance level fireall and one has to allow trafic through this
+      - Stateful - When there is inbound request, SG remembers corrosponding outbound and doenst evaluate it for security
+   - **NACL** 
+      - Like security group, subnet do have firewll which is NACL
+      - Stateless - Evaluates inbound and autbound
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
