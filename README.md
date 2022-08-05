@@ -153,9 +153,15 @@
    - **Security Group** 
       - Instance level fireall and one has to allow trafic through this
       - Stateful - When there is inbound request, SG remembers corrosponding outbound and doenst evaluate it for security
+      - You can just allow target trafic but explicit denile is not possible. what you dont allow is denile by default
+         - What if you want allow 1-2000 ips but not 444b which targetting attack to ur app
+         - We need to add 2 rules
+            - 1-443 - allow rule 1
+            - 445-2000 - allow rule 2
    - **NACL** 
       - Like security group, subnet do have firewll which is NACL
       - Stateless - Evaluates inbound and autbound
+      - Explicit denile is poossible
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
