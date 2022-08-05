@@ -149,7 +149,7 @@
       - CIDR needs to provide
       - Tenancy - option to select where to run VPC servers on - dedicated h/w or not (dedicated = high perf and cost)
 
-### Security Group
+### Firewalls
    - **Security Group** 
       - Instance level fireall and one has to allow trafic through this
       - Stateful - When there is inbound request, SG remembers corrosponding outbound and doenst evaluate it for security
@@ -170,6 +170,6 @@
 - [What is Cross zone load balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html)
          - What if you need to balance traffic across Az A and AZ B, but A have 4 ec2 and b have just 1, AZ b will be overloaded if both AZs get 50% traffic
          - To address this -  LB nodes get created at respective AZs and then its LB node's responsiblity to distribute load further
-         ![image](https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png)
+         <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png">
 - TBD - Lanch template vs Launch configuration
 
