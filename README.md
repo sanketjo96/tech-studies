@@ -163,6 +163,26 @@
       - Stateless - Evaluates inbound and autbound
       - Explicit denile is poossible
 
+### S3
+   - Simple storage service, Public service
+   - Service is global but you have to create buckets (container) at regional level
+   - Bucket name must be globally unique
+   - Object storage unlike block storage like EBS
+      - Object key - filename
+      - Object value  - file data
+      - No matter what - even you create heirachy of folder > file etc, the data stored in key value way
+      - Security (3 layers)
+         - Bucket level 
+         - Object level
+            - ACL (outdated approach)
+               - Old way
+               - Limited control
+            - BUcket policy (through IAM)
+               - Prefered way
+               - Granual 
+   - Versioning
+      -  Bucket versioning enables one to save versions of conetnet with same key/filename3
+
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
 - [What is CIDR Block?](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/learn/lecture/13528536#overview)
