@@ -188,6 +188,8 @@
          -  Within same region
          -  Replication across AZ
          -  No extra chanrges
+      -  Cross Region - Replicate data across region
+      -  Cross Account - Replication from one account to other account
    -  Storage classes 
       -  AWS decided discounts on s3 buckets bills based on storage classes.
       - Classes 
