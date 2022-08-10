@@ -167,7 +167,7 @@
    - Simple storage service, Public service
    - Service is global but you have to create buckets (container) at regional level
    - Bucket name must be globally unique
-   - Object storage unlike block storage like EBS
+   - Object storage unlike block storage like EBS, cant be attached with EC2
       - Object key - filename
       - Object value  - file data
       - No matter what - even you create heirachy of folder > file etc, the data stored in key value way
@@ -181,7 +181,22 @@
                - Prefered way
                - Granual 
    - Versioning
-      -  Bucket versioning enables one to save versions of conetnet with same key/filename3
+      -  Bucket versioning enables to save versions of conetnet with same key/filename3
+      -  Prevents accidental deletes
+   -  S3 replication
+      -  Default
+         -  Within same region
+         -  Replication across AZ
+         -  No extra chanrges
+   -  Storage classes 
+      -  AWS decided discounts on s3 buckets bills based on storage classes.
+      - Classes 
+         -  Standard - Frequently acess data and results in ms, No min storage duration
+         -  Standard IA - Infrequent access (once in month) results in ms, (need to save data for min 30 days duration)
+         -  One zone - Infrequent acess but data stored in single AZ (so less dezaster coverage). Can store recreatable and IA data (min 30 days duration)
+         -  Glacier instant retrieval - Long-lived archived data with access may be once in qurater
+         -  Inteligent tiering - Higest cost but fits all access pattens of data and it automatically fits to usecase
+      -  Lifecycle rules on bucket allows us to move stored objects across different classes
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
