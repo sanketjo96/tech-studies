@@ -222,10 +222,10 @@
             - Better coverage from failover
             - Needs frequent sync replication to maintain standby copy
             - Standby can only be used for read purpose, it does not accept write from ouside (for replication its supports write)
-            - This setup is highly available but not a fault tollerant 
+            - This setup is highly available (HA) but not a fault tollerant (FT), 
+               - **FT** means handling failuar without disrepution in no time
+               - **HA** means being available without downtime - (even you are on standup still application is running with some capabality)
             <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/184273660-df445814-78db-4ef7-835f-d3513952fb97.png">
-         
-
 
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
