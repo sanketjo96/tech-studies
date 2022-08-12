@@ -213,7 +213,7 @@
 #### Database
    - RDS
       - RDS vs EC2
-         - Its possible to install any RDBMS on ec2 and work with it but then we need to manage it (security, perf tweaks)
+         - Its possible to install any RDBMS on ec2 and work with it but then we need to manage it (security, perf tweaks, version update)
          - However, aws manages the RDS service (but will allow only latest DB versions)
       - Setups
          - Single instance 
