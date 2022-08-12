@@ -200,6 +200,12 @@
          -  Inteligent tiering - Higest cost but fits all access pattens of data and it automatically fits to usecase
       -  Lifecycle rules on bucket allows us to move stored objects across different classes
 
+   - Performance
+   - Security
+
+#### Database
+
+
 #### Insights
 - [What is OPS and Throughpus ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
 - [What is CIDR Block?](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/learn/lecture/13528536#overview)
