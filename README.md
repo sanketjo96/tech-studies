@@ -231,6 +231,11 @@
          - Multi AZ DB cluster
             - Multiple standby DBs
             - This prvides addfitional perf benifits as your app now can have 2 servers for read operation and one for write 
+         - Multi read replicas setup
+            - Multiple read replica to provide even more HA 
+            - Can go and have across region 
+            - The only thing is data sync is asynchronus so bit lagish
+            - We may use these replicas for read operation ffor reporting and analytics (may be not on app if its need realtime reads)
 
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
