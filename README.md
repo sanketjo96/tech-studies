@@ -213,7 +213,7 @@
 #### Database
    - RDS
       - RDS vs EC2
-         - Its possible to install any RDBMS on ec2 and work with it but then we need to manage it
+         - Its possible to install any RDBMS on ec2 and work with it but then we need to manage it (security, perf tweaks)
          - However, aws manages the RDS service (but will allow only latest DB versions)
       - Setups
          - Single instance 
@@ -228,6 +228,9 @@
             - You are not getting any performance benefit of having standby along with main instance 
             - But we can prevent some perf impact - say you need to take a backup from DB file when application is live, this can cause perf issues as your are doing it when ppl are using app. You can take backup from standby in such case to ensure smooth app experience 
             <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/184273660-df445814-78db-4ef7-835f-d3513952fb97.png">
+         - Multi AZ DB cluster
+            - Multiple standby DBs
+            - This prvides addfitional perf benifits as your app now can have 2 servers for read operation and one for write 
 
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
