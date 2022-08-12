@@ -222,6 +222,7 @@
             - Better coverage from failover
             - Needs frequent sync replication to maintain standby copy
             - Standby can only be used for read purpose, it does not accept write from ouside (for replication its supports write)
+            - This setup is highly available but not a fault tollerant 
             <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/184273660-df445814-78db-4ef7-835f-d3513952fb97.png">
          
 
