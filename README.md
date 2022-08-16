@@ -248,6 +248,27 @@
             - **Parallel query**
             - **Serverless** - No need to configure machine, it will managed automatically by aws
             - Suppprts 15 read replicas
+         - Dynamo DB
+            - NOSql DB 
+            - Useful for application which needs scalablity
+            - Serverless no need to select server confs
+            - RCU and WCU calculations can be done while creation and assigne them as needed
+               - RCU - read capacity unit
+               - WCU - read capacity unit 
+            - Indexing
+               - Local secondary index
+                  - Can be created only at creation of table
+                  - Allows you to define only one sort key 
+                  - RCU and WCU will be shared with index
+               - Global secondary index
+                  - Can be created while creating or even after creation
+                  - Basically its a new table in memory to boost perf of your query
+                  - Allows to add new partition key and sort key
+                  - You can assign RCU and WCU values
+            - Global table
+               - With global table you basically can create replica 
+               - It happens with help of DynamoDB stream, so anything you add anything to table gets replicated to replica
+               - 
 
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
@@ -257,4 +278,5 @@
          - What if you need to balance traffic across Az A and AZ B, but A have 4 ec2 and b have just 1, AZ b will be overloaded if both AZs get 50% traffic
          - To address this -  LB nodes get created at respective AZs and then its LB node's responsibility to distribute load further.
 <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png">
+- TBD - What is indexing
 - TBD - Launch template vs Launch configuration
