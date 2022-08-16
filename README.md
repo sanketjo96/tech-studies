@@ -246,7 +246,8 @@
                - Earlier we used to have single master to support both read and write
             - **Global DB feature** - we can have instannces spanning across globe for better performance
             - **Parallel query**
-            - **Serverless**   
+            - **Serverless** - No need to configure machine, it will managed automatically by aws
+            - Suppprts 15 read replicas
 
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
