@@ -268,8 +268,9 @@
             - Global table
                - With global table you basically can create replica 
                - It happens with help of DynamoDB stream, so anything you add anything to table gets replicated to replica
-               - 
-
+          - Elastic cache
+            - Its in memory database with redis/memcache   
+  
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
 - [What is CIDR Block?](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/learn/lecture/13528536#overview)
