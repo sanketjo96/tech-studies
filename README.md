@@ -232,10 +232,15 @@
             - Multiple standby DBs
             - This prvides addfitional perf benifits as your app now can have 2 servers for read operation and one for write 
          - Multi read replicas setup
+            - Read replicas are duplicates of your primnary DB
+            - Up to 5 are possible (in contrast of just standby DB) 
             - Multiple read replica to provide even more HA 
-            - Can go and have across region 
-            - The only thing is data sync is asynchronus so bit lagish
+            - Can have across region 
+            - The only thing is data sync is asynchronus so bit lagish (not as quick as standby)
             - We may use these replicas for read operation ffor reporting and analytics (may be not on app if its need realtime reads)
+             <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/184273660-df445814-78db-4ef7-835f-d3513952fb97.png">
+         - Amezon arrora
+            -  
 
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
