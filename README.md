@@ -239,8 +239,8 @@
             - The only thing is data sync is asynchronus so bit lagish (not as quick as standby)
             - We may use these replicas for read operation ffor reporting and analytics (may be not on app if its need realtime reads)
              <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/184948898-27e90f4f-8233-4ff3-aad4-bbf499155087.png">
-         - Amezon arrora
-            -  
+          - Amezon arrora
+            - Its a new database engine  
 
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
