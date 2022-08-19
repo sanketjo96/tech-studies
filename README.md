@@ -269,7 +269,15 @@
                - With global table you basically can create replica 
                - It happens with help of DynamoDB stream, so anything you add anything to table gets replicated to replica
           - Elastic cache
-            - Its in memory database with redis/memcache   
+            - Its in memory database with redis/memcache 
+            - Work as perf optimizer for DBs, usecase - Storing session data
+         - Redshift
+            - Its basically query optimizer where master accepts your complex query gets devided to chunks and send across multiple nodes 
+            - Those multiple nodes process query and return data to master
+            - Master is responsible for data management and return to client
+            <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/185526160-18882a55-1563-498e-9ecf-c95e8722809e.png">
+
+            
   
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
