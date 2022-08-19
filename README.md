@@ -268,15 +268,21 @@
             - Global table
                - With global table you basically can create replica 
                - It happens with help of DynamoDB stream, so anything you add anything to table gets replicated to replica
-          - Elastic cache
-            - Its in memory database with redis/memcache 
-            - Work as perf optimizer for DBs, usecase - Storing session data
-         - Redshift
-            - Its basically query optimizer where master accepts your complex query gets devided to chunks and send across multiple nodes 
-            - Those multiple nodes process query and return data to master
-            - Master is responsible for data management and return to client
-            - Used for OLAP 
-            <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/185526160-18882a55-1563-498e-9ecf-c95e8722809e.png">
+   - Elastic cache
+      - Its in memory database with redis/memcache 
+      - Work as perf optimizer for DBs, usecase - Storing session data
+   - Redshift
+      - Amazon Redshift is a data warehouse product which forms part of the larger cloud-computing platform 
+      - Its basically query optimizer where master accepts your complex query gets devided to chunks and send across multiple nodes 
+      - Those multiple nodes process query and return data to master
+      - Master is responsible for data management and return to client
+      - Used for OLAP 
+      <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/185526160-18882a55-1563-498e-9ecf-c95e8722809e.png">
+
+#### Cloud formation
+   - Automated and programatic way to create your infra (ec2, s3, etc..)
+   - Once dev team complete there work, devops team lookup the resourses list from devs and create CF template to deploy at production
+   - 
 
             
   
