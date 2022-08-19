@@ -282,7 +282,8 @@
 #### Cloud formation
    - Automated and programatic way to create your infra (ec2, s3, etc..)
    - Once dev team complete there work, devops team lookup the resourses list from devs and create CF template to deploy at production
-   - 
+#### SQS
+   <img width="377" alt="image" src="https://user-images.githubusercontent.com/31438283/185536919-e51663e0-0183-4583-88bd-961724ecc3de.png">
 
             
   
