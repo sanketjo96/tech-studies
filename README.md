@@ -275,6 +275,7 @@
             - Its basically query optimizer where master accepts your complex query gets devided to chunks and send across multiple nodes 
             - Those multiple nodes process query and return data to master
             - Master is responsible for data management and return to client
+            - Used for OLAP 
             <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/185526160-18882a55-1563-498e-9ecf-c95e8722809e.png">
 
             
@@ -289,3 +290,4 @@
 <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/182283025-999f40a7-4294-4290-bf32-f42f1f751fce.png">
 - TBD - What is indexing
 - TBD - Launch template vs Launch configuration
+- TBD - OLAP
