@@ -279,6 +279,7 @@
       - Used for OLAP 
       <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/185526160-18882a55-1563-498e-9ecf-c95e8722809e.png">
 
+
 #### Cloud formation
    - Automated and programatic way to create your infra (ec2, s3, etc..)
    - Once dev team complete there work, devops team lookup the resourses list from devs and create CF template to deploy at production
