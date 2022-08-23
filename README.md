@@ -291,8 +291,20 @@
 ### SES
    - It used to send email programatically
 
-### IAM
+### IAM (main)
    - Identity and acess management
+   - Root user vs IAM users -  root user will have all access. Other IAM users are deemed users
+   - IAM user creation
+      - TWo access types and one need to choose this during IAM user creation
+         - Programatic access - AWA API, CLI, SDK
+         - Console access  - Console UI
+      - Policies
+         - Specific access permissions to use aws services
+         - One can add/attach these polucies to user to have restricted access
+         - We can create custom policies as well
+      - IAM Group
+         - If you need to assign some set of policies to multiple user better to create policy group called IAM group
+         - And assign users to the created group 
   
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
