@@ -1,6 +1,6 @@
 # AWS SA certification notes
 
-#### EC2
+#### EC2 (main)
 1. Types
    1. General purpose
        - Balance between compute, networking and memory
@@ -49,7 +49,7 @@
        - But no access to h/w
        - Useful in cases where high level compliance needs are in place i.e. not sharing h/w with any other aws account
 
-#### EC2 storage
+#### EC2 storage (main)
 1. EC2 instance store (**ephemeral storage**)
     - EBS volume has limited perf as in the end they are network drive
     - if you need high IOPs ec2 instance store is an option which are disk drives mounted on physical server
@@ -163,7 +163,7 @@
       - Stateless - Evaluates inbound and outbound
       - Explicit denial is possible
 
-### S3
+### S3 (main)
    - Simple storage service, Public service
    - Service is global but you have to create buckets (container) at regional level
    - Bucket name must be globally unique
@@ -210,7 +210,7 @@
             - Managed by KMS 
          - Client side 
 
-#### Database
+#### Database (main)
    - RDS
       - RDS vs EC2
          - Its possible to install any RDBMS on ec2 and work with it but then we need to manage it (security, perf tweaks, version update)
@@ -284,8 +284,15 @@
    - Once dev team complete there work, devops team lookup the resourses list from devs and create CF template to deploy at production
 #### SQS
    <img width="377" alt="image" src="https://user-images.githubusercontent.com/31438283/185536919-e51663e0-0183-4583-88bd-961724ecc3de.png">
+#### SNS
+   - It is a notification service which are helpful for sending emails, sms etc.
+   - But on top of all this you can creare pub-sub pattern which will help your arcitecture 
 
-            
+#### SES
+   - It used to send email programatically
+
+### IAM
+   - Identity and acess management
   
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
