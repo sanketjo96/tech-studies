@@ -1,6 +1,6 @@
 # AWS SA certification notes
 
-#### EC2 (main)
+### EC2 (main)
 1. Types
    1. General purpose
        - Balance between compute, networking and memory
@@ -49,7 +49,7 @@
        - But no access to h/w
        - Useful in cases where high level compliance needs are in place i.e. not sharing h/w with any other aws account
 
-#### EC2 storage (main)
+### EC2 storage (main)
 1. EC2 instance store (**ephemeral storage**)
     - EBS volume has limited perf as in the end they are network drive
     - if you need high IOPs ec2 instance store is an option which are disk drives mounted on physical server
@@ -99,7 +99,7 @@
             - Create common folder on ec2
             - Mount common folder to EFS by running mount command
             
-#### Load balancer
+### Load balancer
    - Classic load balancer
       - Supports all protocols HTTP,HTTPS,TCP,UDP
       - Expensive and less performant
@@ -133,7 +133,7 @@
                - **Example - If 50% < CPU < 60% - add1, If 70% < CPU < 60% - add2, If 80% < CPU < 90% - add3**
       <img src="https://user-images.githubusercontent.com/31438283/182691970-82cac0f9-4a54-4877-9b24-c1df92e1c5f3.png" width="300" height="200">
 
-#### Virtual private cloud
+### Virtual private cloud
 - Components of VPC
    - **VPC** - is a regional entity, which is ones own private network  
    - **Subnet** - Within VPC we have sub groups called subnets and its AZ level
@@ -210,7 +210,7 @@
             - Managed by KMS 
          - Client side 
 
-#### Database (main)
+### Database (main)
    - RDS
       - RDS vs EC2
          - Its possible to install any RDBMS on ec2 and work with it but then we need to manage it (security, perf tweaks, version update)
@@ -279,16 +279,16 @@
          - Used for OLAP 
          <img width="300" height="200" alt="image" src="https://user-images.githubusercontent.com/31438283/185526160-18882a55-1563-498e-9ecf-c95e8722809e.png">
 
-#### Cloud formation
+### Cloud formation
    - Automated and programatic way to create your infra (ec2, s3, etc..)
    - Once dev team complete there work, devops team lookup the resourses list from devs and create CF template to deploy at production
-#### SQS
+### SQS
    <img width="377" alt="image" src="https://user-images.githubusercontent.com/31438283/185536919-e51663e0-0183-4583-88bd-961724ecc3de.png">
-#### SNS
+### SNS
    - It is a notification service which are helpful for sending emails, sms etc.
    - But on top of all this you can creare pub-sub pattern which will help your arcitecture 
 
-#### SES
+### SES
    - It used to send email programatically
 
 ### IAM
