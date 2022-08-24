@@ -282,6 +282,7 @@
 ### Cloud formation
    - Automated and programatic way to create your infra (ec2, s3, etc..)
    - Once dev team complete there work, devops team lookup the resourses list from devs and create CF template to deploy at production
+
 ### SQS
    <img width="377" alt="image" src="https://user-images.githubusercontent.com/31438283/185536919-e51663e0-0183-4583-88bd-961724ecc3de.png">
 ### SNS
@@ -300,12 +301,12 @@
          - Console access  - Console UI
       - Policies
          - Specific access permissions to use aws services
-         - One can add/attach these polucies to user to have restricted access
+         - One can add/attach these Policies to user to have restricted access
          - We can create custom policies as well
       - IAM Group
          - If you need to assign some set of policies to multiple user better to create policy group called IAM group
          - And assign users to the created group 
-  
+
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
 - [What is CIDR Block?](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02/learn/lecture/13528536#overview)
