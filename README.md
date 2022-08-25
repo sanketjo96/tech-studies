@@ -303,9 +303,19 @@
          - Specific access permissions to use aws services
          - One can add/attach these Policies to user to have restricted access
          - We can create custom policies as well
+         - Types of policy and weights
+            - By default everything is deny  (low)
+            - **Explicit Allow** (mid)
+            - **Explicit deny** (highest)
       - IAM Group
          - If you need to assign some set of policies to multiple user better to create policy group called IAM group
          - And assign users to the created group 
+      - IAM role
+         - For user to access some service we can use group and policies, but what if one service wanted to use another service
+         - Here comes role , role is the way to grant or deny access for service who is willing to access some other service
+         - This is not only usecase for the role but its a main use of it
+         <img width="377" alt="image" src="[https://user-images.githubusercontent.com/31438283/185536919-e51663e0-0183-4583-88bd-961724ecc3de.png](https://user-images.githubusercontent.com/31438283/186739837-7282c78f-5209-4d8d-89ca-2694234e42fb.png)">
+
 
 #### Insights
 - [What is OPS and Throughputs ? ](https://www.youtube.com/watch?v=YD_Lg2lzTYI)
