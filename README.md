@@ -316,6 +316,24 @@
          - Here comes role , role is the way to grant or deny access for service who is willing to access some other service
          - This is not only usecase for the role but its a main use of it
          <img src="https://user-images.githubusercontent.com/31438283/186744144-de843d4e-4dbe-4afc-a5aa-62c307fb1f95.png" width="300" height="200">
+         
+ ### CloudWatch
+ - This is to monitor your entire AWS account
+ - It can also trigger alarms for example trigger alarm if ec2 cpu utilization > 70%
+ - It also allows to attach actions on some triggers which can be useful in order to provide FTA arch. Actiuons like 
+   - Sending email
+   - EC2 actions like stop ec2 etc.+
+   - Adding new server by notifying ASG
+ - In order to attach action and react, You can create a alarm basxed on service metric
+ - Logs
+   - Logs group - we do have log groped by service  
+
+ ### Lambda
+ - To run code without server
+ - Whenever there is event generation, lambda will trigger and will process things as you need
+ <img src="https://user-images.githubusercontent.com/31438283/186752527-9e3e4880-4a7e-4dd6-a36d-1f2d69ee854b.png" width="300" height="200">
+
+
 
 
 #### Insights
