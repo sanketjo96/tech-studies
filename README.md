@@ -332,6 +332,12 @@
  - To run code without server
  - Whenever there is event generation, lambda will trigger and will process things as you need
  <img src="https://user-images.githubusercontent.com/31438283/186752527-9e3e4880-4a7e-4dd6-a36d-1f2d69ee854b.png" width="300" height="200">
+ - Event driven arch
+   - Producer - who creates an event
+   - Event but - Router
+   - Consumer - consumes event
+- You will be charged on processing time basis
+- Easy to scale and provieds performance
 
 
 
