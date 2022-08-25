@@ -132,6 +132,7 @@
                - Increase or decrease desired capacity based on set of adjustments
                - **Example - If 50% < CPU < 60% - add1, If 70% < CPU < 60% - add2, If 80% < CPU < 90% - add3**
       <img src="https://user-images.githubusercontent.com/31438283/182691970-82cac0f9-4a54-4877-9b24-c1df92e1c5f3.png" width="300" height="200">
+      
 
 ### Virtual private cloud
 - Components of VPC
@@ -314,7 +315,7 @@
          - For user to access some service we can use group and policies, but what if one service wanted to use another service
          - Here comes role , role is the way to grant or deny access for service who is willing to access some other service
          - This is not only usecase for the role but its a main use of it
-         <img width="377" alt="image" src="https://user-images.githubusercontent.com/31438283/186739837-7282c78f-5209-4d8d-89ca-2694234e42fb.png">
+         <img src="https://user-images.githubusercontent.com/31438283/186744144-de843d4e-4dbe-4afc-a5aa-62c307fb1f95.png" width="300" height="200">
 
 
 #### Insights
