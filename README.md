@@ -199,14 +199,16 @@
          -  One zone - Infrequent access but data stored in single AZ (so less disaster coverage). Can store re-creatable and IA data (min 30 days duration)
          -  Glacier instant retrieval - Long-lived archived data with access may be once in qurater
          -  Intelligent tiering - OPtimized cost as behind the screen aws sense your accessing model and move your objects to frequent/infrequest access.
-
-    - Data consistancy
-      - Read after write (new object) - You can retrive data object right away.
-      - Overwrites using PUTS - A subsequant read might return old data so eventually consistant.  
+      -  S3 Life cycle management - AWS is providing a another automatic way if you want to distribute object across diffrent access classes. This will save manual effort. Example - Moving objects accessed before 30 days to IA    
+   
+   - Data consistancy
+     - Read after write (new object) - You can retrive data object right away.
+     - Overwrites using PUTS - A subsequant read might return old data so eventually consistant.  
 
    - Performance
       - Multipart data upload
       - Transfer from edge locations
+  
    - Security
       - Encryption
          - Server side
