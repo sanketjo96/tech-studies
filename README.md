@@ -198,8 +198,11 @@
          -  Standard IA - Infrequent access (once in month) results in ms, (need to save data for min 30 days duration)
          -  One zone - Infrequent access but data stored in single AZ (so less disaster coverage). Can store re-creatable and IA data (min 30 days duration)
          -  Glacier instant retrieval - Long-lived archived data with access may be once in qurater
-         -  Intelligent tiering - Highest cost but fits all access patterns of data and it automatically fits to use case
-      -  Lifecycle rules on bucket allows us to move stored objects across different classes
+         -  Intelligent tiering - OPtimized cost as behind the screen aws sense your accessing model and move your objects to frequent/infrequest access.
+
+    - Data consistancy
+      - Read after write (new object) - You can retrive data object right away.
+      - Overwrites using PUTS - A subsequant read might return old data so eventually consistant.  
 
    - Performance
       - Multipart data upload
@@ -210,6 +213,7 @@
             - Managed by s3
             - Managed by KMS 
          - Client side 
+
 
 ### Database (main)
    - RDS
