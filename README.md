@@ -211,12 +211,17 @@
   
    - Security
       - Encryption
-         - Server side
-            - Managed by s3
-            - Managed by KMS 
-         - Client side 
-
-
+         - For data in transit
+            - AWS provides way to enable SSL/TLS on access requets  
+         - For data in rest
+            - Server side   
+               - This means encription of stored data
+               - AWS can do this using managed keyes 
+               - AWS can also accept custom keys from us to do encription
+            - Client side encription
+               - Upload encrypted data only
+               - Manage decription on own at client side 
+   
 ### Database (main)
    - RDS
       - RDS vs EC2
